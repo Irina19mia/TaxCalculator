@@ -32,6 +32,8 @@ public class Main {
         } else if (salary > SCALE3) {
             tax = salary * TAX_PERCENT_3 / 100;
         } else {
+            // Якщо введена зарплата менше чи дорівнює 0, то виведемо відповідне повідомлення
+            // змінній tax присвоюємо -1 тому що її потрібно ініціалізувати (помилка компіляції)
             tax = -1;
             System.out.println("Salary can't be negative or zero");
         }
